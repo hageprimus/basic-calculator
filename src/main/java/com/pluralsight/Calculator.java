@@ -23,19 +23,19 @@ public class Calculator {
         String calcSelect = myScanner.nextLine();
 
         switch (calcSelect){
-            case "A": case "a":
+            case "A", "a":
                 passedSwitch = true;
                 finalResult = num1 + num2;
                 break;
-            case "S": case "s":
+            case "S", "s":
                 passedSwitch = true;
                 finalResult = num1 - num2;
                 break;
-            case "M": case "m":
+            case "M", "m":
                 passedSwitch = true;
                 finalResult = num1 * num2;
                 break;
-            case "D": case "d":
+            case "D", "d":
                 if (num2 != 0) {
                     passedSwitch = true;
                     finalResult = num1 / num2;
