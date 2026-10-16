@@ -14,15 +14,17 @@ public class Calculator {
         double num2 = myScanner.nextDouble();
 
         myScanner.nextLine();
-        System.out.println("Possible calculations: ");
-        System.out.println("(A)dd: ");
-        System.out.println("(S)ubtract: ");
-        System.out.println("(M)ultiply: ");
-        System.out.println("(D)ivide: ");
-        System.out.println("Please select an option: ");
+        String menuPrompt = """
+                            Possible calculations:
+                            (A)dd:
+                            (S)ubtract:
+                            (M)ultiply:
+                            (D)ivide:
+                            Please select an option:""";
+        System.out.println(menuPrompt);
         String calcSelect = myScanner.nextLine();
 
-        switch (calcSelect){
+        switch (calcSelect) {
             case "A", "a":
                 passedSwitch = true;
                 finalResult = num1 + num2;
